@@ -3,7 +3,8 @@
 # dependencies = [
 #     "numpy",
 #     "pillow",
-#     "chafa.py"
+#     "chafa.py",
+#     "wand"
 # ]
 # ///
 
