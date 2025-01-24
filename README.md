@@ -1,8 +1,8 @@
 # Random Crazy GIF Generator 
 
 A psychedelic animation generator that creates random shapes, 3D cubes, and 4D tesseracts. Displays directly in your terminal or exports as GIF!
-
-[![asciicast](https://img.shields.io/badge/Generated%20With-Chafa-00ffff?style=flat-square)](https://github.com/hpjansson/chafa)
+---------------------
+|![Alt Text](out.gif)|
 
 ## Features ✨
 
@@ -20,6 +20,17 @@ A psychedelic animation generator that creates random shapes, 3D cubes, and 4D t
 ```bash
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
+
+**1. Install System Dependencies:**
+
+```bash
+# Ubuntu/Debian
+sudo apt-get install libmagickwand-dev
+```
+```bash
+# macOS
+brew install chafka imagemagick
+```
 
 ## Usage 🚀
 ```bash
