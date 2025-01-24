@@ -1,4 +1,3 @@
-```markdown
 # Random Crazy GIF Generator that Displays on Terminal
 
 A Python script that generates random shapes, including cubes, tesseracts, and polygons, and displays them in an animated format on the terminal using ASCII art. It also supports generating a GIF for the random shapes.
@@ -83,6 +82,3 @@ Enjoy watching the random shapes like cubes, tesseracts, and polygons!
 ## License
 
 This project is licensed under the MIT License.
-```
-
-This README provides full documentation of the usage, installation, and features of the project.
