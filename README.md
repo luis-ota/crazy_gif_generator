@@ -22,7 +22,7 @@ A psychedelic animation generator that creates random shapes, 3D cubes, and 4D t
 ```bash
 # Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
-
+```
 **1. Install System Dependencies:**
 
 ```bash
