@@ -57,7 +57,7 @@ uv run random_gif.py --output trippy.gif --size 100 --frames 30 --speed 0.8
 
 **Slow-mo fractal journey:**
 ```bash
-python random_gif.py --speed 0.5 --frames 100
+uv run random_gif.py --speed 0.5 --frames 100 -S 100
 ```
 
 ## Technical Notes 🔧
