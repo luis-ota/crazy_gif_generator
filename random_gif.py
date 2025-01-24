@@ -187,7 +187,7 @@ def display_animated_shapes(num_frames=20, fps=5, size=50):
     except KeyboardInterrupt:
         print("\033[2J\033[HAnimation stopped.")
 
-def create_gif(output_path="random_shapes.gif", size=50, frame_count=20, duration=100):
+def create_gif(output_path="random_shapes.gif", size=100, frame_count=20, duration=100):
     """Generate multiple frames and save them as a GIF."""
     frames = []
     for _ in range(frame_count):

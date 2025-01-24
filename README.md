@@ -1,8 +1,10 @@
 # Random Crazy GIF Generator 
 
 A psychedelic animation generator that creates random shapes, 3D cubes, and 4D tesseracts. Displays directly in your terminal or exports as GIF!
----------------------
-|![Alt Text](out.gif)|
+
+
+|![demo](out.gif)| 
+|--------------------|
 
 ## Features ✨
 
