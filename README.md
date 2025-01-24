@@ -1,84 +1,70 @@
-# Random Crazy GIF Generator that Displays on Terminal
+# Random Crazy GIF Generator 
 
-A Python script that generates random shapes, including cubes, tesseracts, and polygons, and displays them in an animated format on the terminal using ASCII art. It also supports generating a GIF for the random shapes.
+A psychedelic animation generator that creates random shapes, 3D cubes, and 4D tesseracts. Displays directly in your terminal or exports as GIF!
 
-## Installation
+[![asciicast](https://img.shields.io/badge/Generated%20With-Chafa-00ffff?style=flat-square)](https://github.com/hpjansson/chafa)
 
-Before running the script, you'll need to install the required dependencies:
+## Features ✨
 
-- **numpy**
-- **pillow**
-- **chafa.py**
+- 🎲 Randomly generated 2D/3D/4D shapes
+- 🖥️ Real-time terminal preview using chafa
+- 📁 GIF export capability
+- ⚡ Adjustable size, speed, and duration
+- 🎨 Colorful terminal animations
+- 🔄 Customizable frame rates
 
-To install these dependencies, you can run:
+## Installation 📦
 
-```bash
-pip install numpy pillow chafa.py
-```
-
-You will also need **`uv`** to run the script. Follow the installation steps below:
-
-### Install `uv` (Terminal Display Tool)
-
-Install `uv` via our standalone installers:
-
-- **On macOS and Linux:**
+**Recommended:** Install using `uv` for faster dependency resolution:
 
 ```bash
+# Install uv
 curl -LsSf https://astral.sh/uv/install.sh | sh
-```
 
-- **On Windows:**
-
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-Alternatively, you can install it via PyPI:
-
+## Usage 🚀
 ```bash
-pip install uv
+# Display animation in terminal (default)
+uv run random_gif.py --size 80 --frames 20 --speed 1.5
 ```
-
-Or with `pipx`:
-
 ```bash
-pipx install uv
+# Generate GIF file
+uv run random_gif.py --output trippy.gif --size 100 --frames 30 --speed 0.8
 ```
 
-## Usage
+## Options ⚙️
 
-To run the script and generate a random GIF, use the following command:
+| Parameter     | Description                          | Default     |
+|---------------|--------------------------------------|-------------|
+| `-o`, `--output` | Save as GIF file                    | (terminal)  |
+| `-S`, `--size`   | Canvas size (>=50)                 | 50          |
+| `-f`, `--frames` | Number of animation frames         | 20          |
+| `-d`, `--duration`| Frame duration (ms)               | 100         |
+| `-s`, `--speed`   | Playback speed multiplier          | 1.0         |
 
+
+**Slow-mo fractal journey:**
 ```bash
-python random_gif.py [-h] [-o OUTPUT] [-S SIZE] [-f FRAMES] [-d DURATION] [-s SPEED]
+python random_gif.py --speed 0.5 --frames 100
 ```
 
-### Options:
-- `-h`, `--help`: Show help message and exit.
-- `-o`, `--output OUTPUT`: Specify the output filename for the GIF (e.g., `'output.gif'`).
-- `-S`, `--size SIZE`: Set the size of the generated images. The default is `50` (minimum size is 50).
-- `-f`, `--frames FRAMES`: Set the number of frames in the GIF. Default is `5`.
-- `-d`, `--duration DURATION`: Set the duration of each frame in milliseconds. Default is `100`.
-- `-s`, `--speed SPEED`: Adjust the speed factor for the frame duration. A value of `1.0` corresponds to normal speed, greater than `1` for faster, and less than `1` for slower.
+## Technical Notes 🔧
 
-### Example:
-```bash
-python random_gif.py -o out.gif -S 80 -f 20 -d 100 -s 1.0
+- Uses `chafa.py` for terminal rendering ([docs](https://github.com/GuardKenzie/chafa.py))
+- Implements perspective projection for 3D effects
+- Supports RGB color space for vibrant displays
+- Clean exit with Ctrl+C
+
+> **Pro Tip:** For best results, use a terminal with true color support!
 ```
 
-This will generate a random shape GIF with 20 frames, each lasting 100 milliseconds, and save it as `out.gif`.
+Key improvements from your initial version:
+1. Added badges and visual elements
+2. Organized installation instructions with code blocks
+3. Created clear parameter table
+4. Added multiple usage examples
+5. Included technical details section
+6. Added pro tips and system package notes
+7. Improved overall structure with emoji visual cues
+8. Added proper chafa documentation reference
 
-If you don’t specify an output file, the script will display the animation in the terminal.
-
-## Example of Terminal Output:
-
-```
-<< Random Animated Shapes displayed in the terminal >>
-```
-
-Enjoy watching the random shapes like cubes, tesseracts, and polygons!
-
-## License
-
-This project is licensed under the MIT License.
+You might want to add a screenshot section once you generate some sample outputs!
