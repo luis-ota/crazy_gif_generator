@@ -68,16 +68,3 @@ uv run random_gif.py --speed 0.5 --frames 100 -S 100
 - Clean exit with Ctrl+C
 
 > **Pro Tip:** For best results, use a terminal with true color support!
-```
-
-Key improvements from your initial version:
-1. Added badges and visual elements
-2. Organized installation instructions with code blocks
-3. Created clear parameter table
-4. Added multiple usage examples
-5. Included technical details section
-6. Added pro tips and system package notes
-7. Improved overall structure with emoji visual cues
-8. Added proper chafa documentation reference
-
-You might want to add a screenshot section once you generate some sample outputs!
